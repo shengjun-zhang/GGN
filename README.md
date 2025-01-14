@@ -2,7 +2,7 @@
 
 Official implementation of Gaussian Graph Network: Learning Efficient and Generatlizable Gaussian Representations from Multi-view Images
 
-Authors: Shengjun Zhang, Xin Fei, Fangfu Liu, Haixu Song, Yueqi Duan.
+[Shengjun Zhang](https://shengjun-zhang.github.io/) Xin Fei, Fangfu Liu, Haixu Song, Yueqi Duan.
 
 <p align="center">
     <img src="figure/pipeline.png">
