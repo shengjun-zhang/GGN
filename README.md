@@ -1,8 +1,17 @@
-# Gaussian Graph Network
+<p align="center">
+    <h1 align="center">Gaussian Graph Network</h1>
+<p align="center">
 
-Official implementation of Gaussian Graph Network: Learning Efficient and Generatlizable Gaussian Representations from Multi-view Images
+<p align="center">
+    <a href="https://shengjun-zhang.github.io/">Shengjun Zhang</a>, 
+    <a href="https://github.com/Barrybarry-Smith/">Xin Fei</a>,
+    <a href="https://liuff19.github.io/">Fangfu Liu</a>, 
+    HaiXu Song,
+    <a href="https://duanyueqi.github.io/"> Yueqi Duan </a>
+</p>
 
-[Shengjun Zhang](https://shengjun-zhang.github.io/) Xin Fei, Fangfu Liu, Haixu Song, Yueqi Duan.
+<h3 align="center"><a>Paper</a> | <a href="https://shengjun-zhang.github.io/GGN/">Project Page</a>
+</h3>
 
 <p align="center">
     <img src="figure/pipeline.png">
@@ -13,8 +22,8 @@ Official implementation of Gaussian Graph Network: Learning Efficient and Genera
 To get started, create a conda virtual environment using Python 3.10+ and install the requirements:
 
 ```bash
-conda create -n mvsplat python=3.10
-conda activate mvsplat
+conda create -n ggn python=3.10
+conda activate ggn
 pip install torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 --index-url https://download.pytorch.org/whl/cu118
 pip install -r requirements.txt
 ```
