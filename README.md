@@ -3,11 +3,16 @@
 <p align="center">
 
 <p align="center">
-    <a href="https://shengjun-zhang.github.io/">Shengjun Zhang</a>, 
-    <a href="https://github.com/Barrybarry-Smith/">Xin Fei</a>,
-    <a href="https://liuff19.github.io/">Fangfu Liu</a>, 
-    HaiXu Song,
-    <a href="https://duanyueqi.github.io/"> Yueqi Duan </a>
+    <span class="author-block">
+        <a href="https://github.com/zhangshengjun2019">Shengjun Zhang</a></span>,&nbsp;
+    <span class="author-block">
+        <a href="https://github.com/Barrybarry-Smith">Xin Fei</a></span>,&nbsp;
+    <span class="author-block">
+        <a href="https://liuff19.github.io/">Fangfu Liu</a></span>,&nbsp;
+    <span class="author-block">
+        <a href="https://github.com/SongHaixu/shx.github.io">Haixu Song</a></span>,&nbsp;
+    <span class="author-block">
+        <a href="https://duanyueqi.github.io/">Yueqi Duan</a></span>&nbsp;
 </p>
 
 <h3 align="center"><a>Paper</a> | <a href="https://shengjun-zhang.github.io/GGN/">Project Page</a>
