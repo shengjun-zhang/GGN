@@ -4,7 +4,7 @@
 
 <p align="center">
     <span class="author-block">
-        <a href="https://github.com/zhangshengjun2019">Shengjun Zhang</a></span>,&nbsp;
+        <a href="https://shengjun-zhang.github.io/">Shengjun Zhang</a></span>,&nbsp;
     <span class="author-block">
         <a href="https://github.com/Barrybarry-Smith">Xin Fei</a></span>,&nbsp;
     <span class="author-block">
