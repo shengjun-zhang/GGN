@@ -15,7 +15,7 @@
         <a href="https://duanyueqi.github.io/">Yueqi Duan</a></span>&nbsp;
 </p>
 
-<h3 align="center"><a>Paper</a> | <a href="https://shengjun-zhang.github.io/GGN/">Project Page</a>
+<h3 align="center"><a href="https://arxiv.org/abs/2503.16338">Paper</a> | <a href="https://shengjun-zhang.github.io/GGN/">Project Page</a>
 </h3>
 
 <p align="center">
