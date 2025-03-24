@@ -104,7 +104,7 @@ python -m src.main +experiment=acid data_loader.train.batch_size=6 checkpointing
 ```bibtex
 @article{zhang2024GGN,
     title   = {Gaussian Graph Network: Learning Efficient and Generatlizable Gaussian Representations from Multi-view Images},
-    author  = {Shengjun Zhang, Xin Fei, Fangfu Liu, Haixu Song, YueqiDuan},
+    author  = {Zhang, Shengjun and Fei, Xin and Liu, Fangfu and Song, Haixu and Duan, Yueqi},
     journal = {Advances in Neural Information Processing Systems (NeurIPS)},
     year    = {2024},
 }
