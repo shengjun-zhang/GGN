@@ -51,6 +51,81 @@ Convert DTU to chunks by running `python src/scripts/convert_dtu.py --input_dir 
 
 
 ## Running the Code
+### Evaluation on full test sets
+
+We retrain and update the [pretrained models](https://drive.google.com/drive/folders/1UPZ16yOLVzqMWb62G_5LaCgzw1ZlWXTP), including `re10k_new.ckpt` and `acid_new.ckpt`. 
+We also provide full test datasets of Re10k and ACID in the asserts, including `re10k_XXview_all.json` and `acid_XXview_all.json`.
+Run the following:
+
+```bash
+# re10k
+python -m src.main +experiment=re10k \
+checkpointing.load=checkpoint/re10k_new.ckpt \
+mode=test \
+dataset/view_sampler=evaluation \
+test.compute_scores=true \
+dataset.view_sampler.index_path=assets/re10k_4view_all.json
+
+# acid
+python -m src.main +experiment=acid \
+checkpointing.load=checkpoint/acid_new.ckpt \
+mode=test \
+dataset/view_sampler=evaluation \
+test.compute_scores=true \
+dataset.view_sampler.index_path=assets/acid_4view_all.json 
+```
+
+We provide the evaluation results as follows:
+
+**ACID 4 Views**
+|Methods|PSNR|SSIM|LPIPS|Gaussians|
+|-------|----|----|-----|---------|
+|MVSplat|20.13|0.733|0.252|262|
+|MonoSplat|19.62|0.729|0.256|262|
+|HiSplat|20.58|0.774|0.217|344|
+|GGN|23.23|0.715|0.275|151|
+
+**ACID 8 Views**
+|Methods|PSNR|SSIM|LPIPS|Gaussians|
+|-------|----|----|-----|---------|
+|MVSplat|18.22|0.690|0.291|524|
+|MonoSplat|16.89|0.645|0.325|524|
+|HiSplat|16.35|0.729|0.250|688|
+|GGN|22.79|0.696|0.286|214|
+
+**ACID 16 Views**
+|Methods|PSNR|SSIM|LPIPS|Gaussians|
+|-------|----|----|-----|---------|
+|MVSplat|17.64|0.672|0.313|1049|
+|MonoSplat|15.79|0.582|0.385|1049|
+|HiSplat|14.93|0.692|0.279|1376|
+|GGN|23.00|0.704|0.285|303|
+
+**Re10K 4 Views**
+|Methods|PSNR|SSIM|LPIPS|Gaussians|
+|-------|----|----|-----|---------|
+|MVSplat|20.86|0.793|0.204|262|
+|MonoSplat|20.21|0.783|0.210|262|
+|HiSplat|22.68|0.847|0.153|344|
+|GGN|21.77|0.766|0.229|144|
+
+**Re10K 8 Views**
+|Methods|PSNR|SSIM|LPIPS|Gaussians|
+|-------|----|----|-----|---------|
+|MVSplat|19.69|0.767|0.233|524|
+|MonoSplat|18.22|0.719|0.270|524|
+|HiSplat|20.93|0.833|0.168|688|
+|GGN|21.66|0.757|0.240|210|
+
+**Re10K 16 Views**
+|Methods|PSNR|SSIM|LPIPS|Gaussians|
+|-------|----|----|-----|---------|
+|MVSplat|19.18|0.753|0.250|1049|
+|MonoSplat|16.92|0.647|0.331|1049|
+|HiSplat|20.42|0.794|0.208|1376|
+|GGN|21.67|0.759|0.241|305
+
+
 
 ### Evaluation
 
@@ -67,7 +142,7 @@ dataset.view_sampler.index_path=assets/re10k_4view.json
 
 # acid
 python -m src.main +experiment=acid \
-checkpointing.load=checkpoint/acid \
+checkpointing.load=checkpoint/acid.ckpt \
 mode=test \
 dataset/view_sampler=evaluation \
 test.compute_scores=true \
